@@ -1,0 +1,6 @@
+# EnjoySkin
+1.这是一个插件化换肤框架，可以实现动态换肤，通过自动Factory实现LayoutInflater.Factory2接口，重写相关创建View的方法，接管activity 创建View的过程，记录需要实现换肤或属性调整的View
+2.通过反射调用AssetManager的addAssetPath的方法加载皮肤包的相关配置参数，替换程序原有的参数实现换肤效果
+3.通过Application.ActivityLifecycleCallbacks来观察activity的生命周期，动态绑定和解绑自定义的Factory,这样可以减少相关代码对程序的入侵
+
+其中Lib模块是换肤框架，skin模块是皮肤包
